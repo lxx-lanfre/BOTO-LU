@@ -11,7 +11,7 @@ exports.run = async (client, message, args) => {
   .setColor('#2667FF')
   .setFooter('Bu komutu kullanan kullanıcı ' + message.author.tag, message.author.displayAvatarURL())
    .setDescription(client.commands.filter(cmd => cmd.conf.kategori === 'Genel').map(cmd => `:white_small_square: - **${prefix}${cmd.help.name}** ${cmd.help.description}`).join("\n "))
-        .addField("» Linkler", ` [Davet Et]()` + "** | **" + `[Destek Sunucusu]()`  + "** | **" + `[Oy Ver]()`  + "** | **" + `[Web Sitesi]()  `, false)
+        .addField("» Linkler", ` [Davet Et](https://discord.gg/DQnb3CMQsh)` + "** | **" + `[Destek Sunucusu](https://discord.gg/6XUNShxBQk)`  + "** | **" + `[BOTU YAPAN -LFR]()`  + "** | **" + `[Web Sitesi](https://arloxdzn.weebly.com/)  `, false)
               return message.channel.send(Genel)
          
        
